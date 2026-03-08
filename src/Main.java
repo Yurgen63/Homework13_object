@@ -17,18 +17,18 @@ public class Main {
         System.out.println(product3.equals(product4));
         System.out.println(product4.equals(product1));
 
-        Product[] buys = {product3, product1};
-        Product[] buys1 = {product2};
-        Product[] buys2 = {product1, product3, product4};
-        Product[] buys3 = {product3, product4};
+        Product[] buy = {product3, product1};
+        Product[] buy1 = {product2};
+        Product[] buy2 = {product1, product3, product4};
+        Product[] buy3 = {product3, product4};
 
-        Order yuri = new Order(" Юрий ", buys);
+        Order yuri = new Order(" Юрий ", buy);
         System.out.println(yuri);
-        Order sergei = new Order(" Сергей ", buys2);
+        Order sergei = new Order(" Сергей ", buy2);
         System.out.println(sergei);
-        Order daria = new Order(" Дарья ", buys1);
+        Order daria = new Order(" Дарья ", buy1);
         System.out.println(daria);
-        Order svetlana = new Order(" Светлана ", buys3);
+        Order svetlana = new Order(" Светлана ", buy3);
         System.out.println(svetlana);
 
         System.out.println(yuri.equals(daria));
