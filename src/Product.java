@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Product {
@@ -25,6 +26,6 @@ public class Product {
             return false;
         }
         Product product = (Product) o;
-        return id == product.id && Objects.equals(category, product.category);
+        return id == product.id && Objects.equals(category, this.category);
     }
 }

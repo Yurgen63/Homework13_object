@@ -23,6 +23,6 @@ public class Order {
             return false;
         }
         Order order=(Order) o;
-        return Objects.equals(customer, order.customer) && Arrays.equals(basket, order.basket);
+        return Objects.equals(customer, order.customer) && Arrays.equals(basket, this.basket);
     }
 }
